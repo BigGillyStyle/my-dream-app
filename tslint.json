@@ -1,6 +1,7 @@
 {
   "rulesDirectory": [
-    "node_modules/codelyzer"
+    "node_modules/codelyzer",
+    "tslint-plugin-prettier"
   ],
   "rules": {
     "arrow-return-shorthand": true,
@@ -65,6 +66,7 @@
     "no-shadowed-variable": true,
     "no-string-literal": false,
     "no-string-throw": true,
+    "no-submodule-imports": false,
     "no-switch-case-fall-through": true,
     "no-trailing-whitespace": true,
     "no-unnecessary-initializer": true,
@@ -136,5 +138,9 @@
     "component-class-suffix": true,
     "directive-class-suffix": true,
     "invoke-injectable": true
-  }
+  },
+  "extends": [
+    "tslint:latest",
+    "tslint-config-prettier"
+  ]
 }
